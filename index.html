@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Sahil Ansari - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Md Sahil Ansari</div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#resume" class="nav-link" data-page="resume">Resume</a></li>
+                <li><a href="#biodata" class="nav-link" data-page="biodata">Bio-data</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <span class="highlight">Md Sahil Ansari</span></h1>
+                <p class="hero-subtitle">Full-Stack Developer &amp; Tech Innovator</p>
+                <p class="hero-description">Experienced professional with 8+ years of expertise in full-stack development and project management. Passionate about creating innovative solutions and leading high-performing teams.</p>
+                <div class="cta-buttons">
+                    <a href="#resume" class="btn btn-primary" data-page="resume">View Resume</a>
+                    <a href="#biodata" class="btn btn-secondary" data-page="biodata">View Bio-data</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="featured-section">
+            <div class="container">
+                <h2>Key Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <h3>Innovation Award</h3>
+                        <p>Won company innovation award for microservices optimization project</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">📝</div>
+                        <h3>Tech Writer</h3>
+                        <p>Published 3 technical articles on Medium</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🎤</div>
+                        <h3>Conference Speaker</h3>
+                        <p>Speaker at 2 international tech conferences</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+                        <a href="https://github.com" target="_blank" class="social-icon">GitHub</a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                        <a href="https://medium.com" target="_blank" class="social-icon">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Page -->
+    <section id="resume" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Resume</h1>
+                <button class="btn btn-outline" id="downloadBtn">Download PDF</button>
+            </div>
+            
+            <div class="resume-content">
+                <!-- Contact Information -->
+                <div class="resume-section">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email:</strong> sahilansarimd39@gmail.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> 8777080864
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Karnataka, India
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="resume-section">
+                    <h2 class="section-title">Professional Summary</h2>
+                    <p>Experienced professional with 8+ years of expertise in full-stack development and project management. Passionate about creating innovative solutions and leading high-performing teams. Proven track record of delivering complex projects on time and within budget.</p>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="resume-section">
+                    <h2 class="section-title expandable" data-section="experience">
+                        <span>Work Experience</span>
+                        <span class="toggle-icon">−</span>
+                    </h2>
+                    <div class="section-content" id="experience">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Senior Software Engineer</h3>
+                                <span class="duration">2021 - Present</span>
+                            </div>
+                            <p class="company">Tech Innovations Inc.</p>
+                            <ul>
+                                <li>Led development of microservices architecture serving 2M+ users</li>
+                                <li>Mentored team of 5 junior developers</li>
+                                <li>Reduced system latency by 40% through optimization</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Full Stack Developer</h3>
+                                <span class="duration">2018 - 2021</span>
+                            </div>
+                            <p class="company">Digital Solutions Ltd.</p>
+                            <ul>
+                                <li>Developed and maintained 15+ client projects</li>
+                                <li>Implemented responsive designs for web applications</li>
+                                <li>Collaborated with cross-functional teams</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Junior Developer</h3>
+                                <span class="duration">2015 - 2018</span>
+                            </div>
+                            <p class="company">StartupHub</p>
+                            <ul>
+                                <li>Built web applications using React and Node.js</li>
+                                <li>Fixed bugs and improved code quality</li>
+                                <li>Participated in agile development cycles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h2 class="section-title expandable" data-section="education">
+                        <span>Education</span>
+                        <span class="toggle-icon">−</span>
+                    </h2>
+                    <div class="section-content" id="education">
+                        <div class="education-item">
+                            <h3>Master of Science in Computer Science</h3>
+                            <p class="institution">Stanford University</p>
+                            <p class="year">Graduated: 2015</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p class="institution">UC Berkeley</p>
+                            <p class="year">Graduated: 2013</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="resume-section">
+                    <h2 class="section-title expandable" data-section="skills">
+                        <span>Skills</span>
+                        <span class="toggle-icon">−</span>
+                    </h2>
+                    <div class="section-content" id="skills">
+                        <div class="skills-category">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">JavaScript/TypeScript</span>
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h3>Professional Skills</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Team Leadership</span>
+                                <span class="skill-tag">Agile/Scrum</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Communication</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h3>Languages</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">English (Native)</span>
+                                <span class="skill-tag">Spanish (Fluent)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="resume-section">
+                    <h2 class="section-title">Certifications</h2>
+                    <ul class="certifications-list">
+                        <li>AWS Certified Solutions Architect - Professional</li>
+                        <li>Certified Scrum Master (CSM)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio-data Page -->
+    <section id="biodata" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Bio-data</h1>
+            </div>
+            
+            <div class="biodata-content">
+                <div class="biodata-photo">
+                    <img src="https://drive.google.com/file/d/1oukMj1VxUWGSPEs7pcU0ACcQVI3dWuyJ/view?usp=sharing" alt="Md Sahil Ansari">
+                </div>
+                
+                <!-- Personal Information -->
+                <div class="biodata-section">
+                    <h2 class="section-title">Personal Information</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Full Name:</strong>
+                            <span>Md Sahil Ansari</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Date of Birth:</strong>
+                            <span>January 25, 1990</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Gender:</strong>
+                            <span>Male</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Nationality:</strong>
+                            <span>India</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Email:</strong>
+                            <span>sahilansarimd39@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone:</strong>
+                            <span>8777080864</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Location:</strong>
+                            <span>Karnataka,India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational Background -->
+                <div class="biodata-section">
+                    <h2 class="section-title">Educational Background</h2>
+                    <div class="education-item">
+                        <h3>Master of Science in Computer Science</h3>
+                        <p class="institution">Stanford University</p>
+                        <p class="year">Graduated: 2015</p>
+                        <p>Specialized in Distributed Systems and Machine Learning</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p class="institution">UC Berkeley</p>
+                        <p class="year">Graduated: 2013</p>
+                        <p>Major in Software Engineering, Minor in Business Administration</p>
+                    </div>
+                </div>
+
+                <!-- Career History -->
+                <div class="biodata-section">
+                    <h2 class="section-title">Career History &amp; Achievements</h2>
+                    <div class="career-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Senior Software Engineer - Tech Innovations Inc.</h3>
+                                <p class="timeline-date">2021 - Present</p>
+                                <p>Leading the development team and architecting scalable microservices solutions. Successfully reduced system latency by 40% and improved overall application performance.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Full Stack Developer - Digital Solutions Ltd.</h3>
+                                <p class="timeline-date">2018 - 2021</p>
+                                <p>Developed and maintained multiple client projects, implementing responsive designs and modern web technologies.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Junior Developer - StartupHub</h3>
+                                <p class="timeline-date">2015 - 2018</p>
+                                <p>Started career building web applications and participating in agile development cycles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills and Competencies -->
+                <div class="biodata-section">
+                    <h2 class="section-title">Skills &amp; Competencies</h2>
+                    <div class="competencies-grid">
+                        <div class="competency-card">
+                            <h3>Technical Expertise</h3>
+                            <p>Proficient in Python, JavaScript/TypeScript, React.js, Node.js, and cloud technologies including AWS and Docker.</p>
+                        </div>
+                        <div class="competency-card">
+                            <h3>Leadership</h3>
+                            <p>Experienced in leading development teams, mentoring junior developers, and driving project success.</p>
+                        </div>
+                        <div class="competency-card">
+                            <h3>Problem Solving</h3>
+                            <p>Strong analytical skills with a proven track record of optimizing systems and solving complex technical challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies and Interests -->
+                <div class="biodata-section">
+                    <h2 class="section-title">Hobbies &amp; Interests</h2>
+                    <div class="hobbies-list">
+                        <div class="hobby-item">🔧 Open source contribution</div>
+                        <div class="hobby-item">📷 Photography</div>
+                        <div class="hobby-item">⛰️ Mountain hiking</div>
+                        <div class="hobby-item">✍️ Technology blogging</div>
+                    </div>
+                </div>
+
+                <!-- Personal Achievements -->
+                <div class="biodata-section">
+                    <h2 class="section-title">Personal Achievements &amp; Awards</h2>
+                    <ul class="achievements-list">
+                        <li>Won company innovation award for microservices optimization project</li>
+                        <li>Published 3 technical articles on Medium</li>
+                        <li>Speaker at 2 international tech conferences</li>
+                        <li>AWS Certified Solutions Architect - Professional</li>
+                        <li>Certified Scrum Master (CSM)</li>
+                    </ul>
+                </div>
+
+                <!-- References -->
+                <div class="biodata-section">
+                    <h2 class="section-title">References</h2>
+                    <div class="references-grid">
+                        <div class="reference-card">
+                            <h3>John Smith</h3>
+                            <p class="reference-title">CTO at Tech Innovations Inc.</p>
+                            <p class="reference-email">john.smith@techinnovations.com</p>
+                        </div>
+                        <div class="reference-card">
+                            <h3>Sarah Williams</h3>
+                            <p class="reference-title">Project Manager at Digital Solutions Ltd.</p>
+                            <p class="reference-email">sarah.williams@digitalsolutions.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Me</h1>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formSuccess" class="success-message" style="display: none;">
+                        Thank you for your message! I'll get back to you soon.
+                    </div>
+                </div>
+                
+                <div class="contact-info-wrapper">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <strong>📧 Email</strong>
+                            <p>sahilansarimd39@gmail.com</p>
+                        </div>
+                        <div class="contact-detail">
+                            <strong>📞 Phone</strong>
+                            <p>8777080864</p>
+                        </div>
+                        <div class="contact-detail">
+                            <strong>📍 Location</strong>
+                            <p>Karnataka,India</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Social Media</h3>
+                    <div class="social-links-vertical">
+                        <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                        <a href="https://medium.com" target="_blank" class="social-link">Medium</a>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <p>📍 India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Md Sahil Ansari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
